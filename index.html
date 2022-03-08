@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="body-content">
+    <div class="calculadora">
+      <div class="screen">
+        <input type="text" placeholder="0"  disabled id="screen-result"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='0' onclick="getData(this)"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='/' onclick="getData(this)"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='*' onclick="getData(this)"/>
+      </div>
+      <div class="boton btn-clean">
+        <input type="button" value='C' class="clean" onclick="clean()"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='7' onclick="getData(this)"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='8' onclick="getData(this)"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='9' onclick="getData(this)"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='-' onclick="getData(this)"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='4' onclick="getData(this)"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='5' onclick="getData(this)"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='6' onclick="getData(this)"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='+' onclick="getData(this)"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='1'onclick="getData(this)"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='2' onclick="getData(this)"/>
+      </div>
+      <div class="boton">
+        <input type="button" value='3' onclick="getData(this)"/>
+      </div>
+      <div class="boton ">
+        <input type="button" value='=' class="equal" onclick="calculate()"/>
+      </div>
+    </div>
+  </div>
+  <script src="./js/calc.js"></script>
+  </body>
+</html>

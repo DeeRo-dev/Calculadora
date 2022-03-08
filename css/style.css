@@ -1,0 +1,71 @@
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+.body-content{
+  display: flex;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(92,109,122,1) 35%, rgba(0,212,255,1) 100%);
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.calculadora{
+  width: 350px;
+  height: 500px;
+  display: grid;
+  padding: 20px 15px;
+  border-radius: 10px;
+  background:#ddd;
+  box-shadow: inset 0 0 20px rgba(23, 78, 122, 0.719);
+  grid-column: repeat(4, 1fr);
+  grid-row: 85px;
+  grid-gap: 20px;
+
+}
+
+.screen{
+  background:rgba(4, 69, 78, 0.26);
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  grid-column: 1/5;
+  padding: 15px;
+ 
+}
+.screen > input{
+  background: none;
+  border: none;
+  color:inherit;
+  font-size: 50px;
+  padding: 0;
+  outline: inherit;
+  width: 100%;
+
+}
+
+.boton > input{
+ width: 100%;
+ height:100%;
+ background: rgba(18, 110, 122, 0.5);
+ border: none;
+ outline: none;
+ border-radius: 10px;
+ font-size: 15px;
+}
+
+.boton:hover{
+  border-radius: 10px;
+  background: rgba(10, 58, 65, 0.5);
+
+}
+
+.boton > .clean{
+  border-radius: 10px;
+  background: rgba(126, 12, 12, 0.5);
+}
+.boton > .equal{
+  border-radius: 10px;
+  background: rgba(8, 63, 116, 0.5);
+}
